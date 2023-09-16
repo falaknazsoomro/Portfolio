@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83bc789c26.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>        
+            <img src="b.png" class="andriod"> 
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Protfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Falak Naz</span> <br> Soomro From Pakistan</h1>
+            </div>
+    </div>
+</div>
+
+<!-------------About----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+             <img src="Web Developer (720 × 720 px).png">
+        </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Falak, a web developer proficient in C#, Java, and Python. 
+                    I specialize in crafting user-centric web solutions and love turning ideas into real-life projects. 
+                    With a passion for innovation and problem-solving, 
+                    I'm always excited to tackle new challenges and explore emerging technologies.
+                    I am also a Team Leader at Microsoft Tech Hub, where I lead the MTH Quest. T
+                    his student community initiative organizes online and in-person events, such as conferences, meetups, and hackathons, and contributes to open-source projects. I am a Beta Microsoft Learn Student Ambassador, and I have completed several learning paths and technical onboarding sessions on topics such as C#, desktop applications, and web development. I can access free Microsoft tools, such as Azure, GitHub, LinkedIn Premium, and Microsoft 365. 
+                    I am currently a third-year IT student at Quaid-e-Awam University of Engineering, 
+                    Sciences and Technology Nawabshah, 
+                    I am also a YouTube creator with 35K+ subscribers, where I create content on C/C++/C# /web technologies. 
+                    I am passionate about learning new skills and creating impactful solutions for real-world problems.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Python development</span><br>Working on Neural network.</li>
+                            <li><span>Mobile Application Development </span><br>Working on Dart and flutter.</li>
+                            <li><span>Web development</span><br>Working on HTML, CSS, JavaScript and PHP, java</li>
+                            <li><span>Desktop Development</span><br>Working on C#.NET</li>
+                            <li><span>IT support</span><br>Working on python.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Github Global Campus Student</span><br>The GitHub Global Campus Student program is a program 
+                                for students to collaborate on projects and gain experience with GitHub. 
+                                It's a great opportunity to connect with other students and contribute to open-source projects. 🌟👩‍💻 </li>
+                            <li><span>Web development intern at Neodocto </span><br>Web development skills with real life experience and projects</li>
+                            <li><span>Team Leader at Microsoft Tech hub </span><br>Leading MLSA chapter in my campus</li>
+                            <li><span>Beta Microsoft Learn Student Ambassador</span><br>The Microsoft Learn Student Ambassador program is a program for students 
+                                to become ambassadors and advocates for Microsoft technologies and products. 
+                                It's a great opportunity to gain skills, network with professionals, 
+                                  and make an impact in the tech community. 🌟👩‍💻</li>
+                            <li><span>YouTuber </span><br>
+                                Technical and educational content creator with 35K+ followers</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019</span><br>Studying Bachelors of Science in Information Technology at Quest Nawabshah, Sindh Pakistan </li> 
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>IT support: </h2>
+                <p>IT support:</p>
+                <a href="https://github.com/falaknazsoomro">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Python Development </h2>
+                <p>Working on Neural network.</p>
+                <a href="https://github.com/falaknazsoomro">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <h2>Mobile App Development</h2>
+                <p>Working on Dart and flutter.</p>
+                <a href="https://github.com/falaknazsoomro">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Development </h2>
+                <p>Working on HTML, CSS, JavaScript and PHP, java</p>
+                <a href="https://github.com/falaknazsoomro">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="gc.png">
+                <div class="layer">
+                    <h3>C# Crud Form Application</h3>
+                    <p>Visit Github for source code</p>
+                    <a href="https://github.com/falaknazsoomro/Windows-Form-CRUD-App"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="_Add New Restaurant.jpg">
+                <div class="layer">
+                    <h3>Cafe management system using C#</h3>
+                    <p>Visit Github for source code</p>
+                    <a href="https://github.com/falaknazsoomro/Cafe-Management-System"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Screenshot-studentManagementSystemc.png">
+                <div class="layer">
+                    <h3>Student-Marksheet-System</h3>
+                    <p>Visit Github for source code</p>
+                    <a href="https://github.com/falaknazsoomro/Student-Marksheet-System"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/falaknazsoomro" class="btn">See more</a>
+    </div>
+</div>
+<!---------------Contact-------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>falaknazsoomro8@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/falaknazsoomro/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@FalakSoomro/videos"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/falaknazsoomro"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/falaksoomro?igshid=NjIwNzIyMDk2Mg=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Falak Soomro CV.pdf" download class="btn btn2" >Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright 2023 falak Soomro<i class="fa-solid fa-heart"></i>All Rights Reserved.</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+       for (var i = 0; i < tablinks.length; i++) {
+           tablinks[i].classList.remove("active-link");
+       }
+       for (var i = 0; i < tabcontents.length; i++) {
+           tabcontents[i].classList.remove("active-tab");
+       }
+       
+       // Add the "active" class to the selected tab link and tab content
+       document.getElementById(tabname).classList.add("active-tab");
+       event.currentTarget.classList.add("active-link");
+    }
+</script>
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0"
+}
+function closemenu(){
+    sidemenu.style.right = "-200px"
+}
+
+</script>
+<form name="submit-to-google-sheet">
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbziJJMbbcZdhHe7xmVNIMmd_47_AJEq3BJLeUxs2FQwtgescKE7Bn01a3BWCfpXmgZ0Nw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+
+
+
+</body>
+</html>
